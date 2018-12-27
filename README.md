@@ -26,3 +26,15 @@ b) Poiščite prenastavljeni parameter Pulse (ki je 50) v vaši kodi in prepiši
 
 c) V kodi spremenite vrednost širine pulza na 25 %. Zapišite popravljeni ukaz v kodi:
   sConfigOC.Pulse = 25;
+
+
+Ponovno naložite program in s telefonom posnamite signal na zaslonu osciloskopa.
+Zapišite kaj počnejo ukazi v 1.,2. in 3. vrstici (v user code begin 3):
+1. v prvi vrstici v register spreminja vrednost duty cycla, ki ga razbere iz spremenljivke dutyCycle
+
+2. spremnljivko dutycycle poveča za 10
+
+3.  ko duty cycle pride do 90 se ponovno postai na vrednost 10.
+
+
+Komentar: program deluje brez težav. osciloscop ni bilo potrebno nastavljati sam ima fukncijo avto scale, ki vrednosti nastavi sam. signal je lep brez popačenja.
